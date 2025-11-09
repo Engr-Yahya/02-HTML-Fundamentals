@@ -1,0 +1,16 @@
+* {
+  font-family: sans-serif;
+}
+.container {
+  width: 800px;
+  border: 6px solid #000;
+}
+.page-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px 0px;
+}
+.price {
+}
