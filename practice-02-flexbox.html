@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #f2f2;
+        height: 80px;
+        width: 100%;
+      }
+      .logo {
+        background-color: #fff;
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+      }
+      .nav-bar {
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      a:link {
+        margin-right: 20px;
+      }
+      a:last-child {
+        margin-right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"></div>
+      <nav class="nav-bar">
+        <a href="#">Blog</a>
+        <a href="#">challanges</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+  </body>
+</html>
