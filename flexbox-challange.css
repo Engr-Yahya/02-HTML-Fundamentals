@@ -18,6 +18,7 @@ body {
   text-align: center;
   background-color: #f7f7f7;
   padding: 20px 0px;
+  grid-area: page-title;
 }
 .page-title::before {
   content: "sale";
@@ -31,14 +32,20 @@ body {
   top: -20px;
   left: -40px;
 }
-.flex-box {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 30px;
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 36px;
+  grid-template-areas:
+    "page-title page-title page-title"
+    "image details product-info";
+}
+.image {
+  grid-area: image;
 }
 .details {
   width: 280px;
+  grid-area: details;
 }
 .price-shipping-flex {
   width: 240px;
@@ -89,6 +96,7 @@ a:link {
 }
 .product-info {
   width: 240px;
+  grid-area: product-info;
 }
 .product-detail {
   text-transform: uppercase;
